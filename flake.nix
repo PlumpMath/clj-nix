@@ -132,7 +132,7 @@
           mk-deps-cache = final.callPackage ./pkgs/mkDepsCache.nix;
           mkCljBin = final.callPackage ./pkgs/mkCljBin.nix { inherit common; };
           mkCljLib = final.callPackage ./pkgs/mkCljLib.nix { };
-          mkGraalBin = final.callPackage ./pkgs/mkGraalBin.nix { };
+          mkGraalBin = final.callPackage ./pkgs/mkGraalBin.nix { inherit pkgs; };
           customJdk = final.callPackage ./pkgs/customJdk.nix { };
 
           cljHooks = final.callPackage ./pkgs/cljHooks.nix { inherit common; };
