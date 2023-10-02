@@ -13,7 +13,7 @@
 { cljDrv
 , name ? cljDrv.pname
 , version ? cljDrv.version
-, graalvm ? graalvm-ce
+, graalvm ? pkgs.graalvm-ce
 
 , nativeBuildInputs ? [ ]
 
