@@ -4,7 +4,7 @@
 { lib
 , stdenv
 , fetchurl
-, graalvmCEPackages
+, pkgs
 , glibcLocales
 , writeShellScript
 , writeText
